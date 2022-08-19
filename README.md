@@ -54,6 +54,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 2. Download the challenge folder
 3. Initialized a new react app with yarn
 4. First commit
+5. Structure 
 
 
 
@@ -63,10 +64,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
