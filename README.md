@@ -54,7 +54,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 2. Download the challenge folder
 3. Initialized a new react app with yarn
 4. First commit
-5. Structure 
+5. Structure
+6. API
+
 
 
 
