@@ -12,9 +12,12 @@ import { CardInfo } from './interfaces';
 // CSS
 import "./styles/App.css";
 
-function App() {
+const mobile = require('./images/bg-main-mobile.png');
+const desktop = require('./images/bg-main-desktop.png');
+
+export default function App() {
     const [formInfo, setFormInfo] = useState<CardInfo>({
-        holderName: "hahaha",
+        holderName: "",
         cardNumber: "",
         month: "",
         year: "",
@@ -29,11 +32,15 @@ function App() {
 
     return (
         <div className="App">
-            <CreditCard {...formInfo}/>
-            {confirmed ? <CardAdded /> : <Form dataParaser={setFormInfo} info={formInfo}/>}
+            <picture>
+                <source media="(max-width:850px)" srcSet={mobile}/>
+                <img src={desktop}/>
+            </picture>
+
+            <CreditCard {...formInfo} />
+            {confirmed ? <CardAdded /> : <Form dataParaser={setFormInfo} info={formInfo} />}
             <button onClick={handleClick}>{confirmed ? "continue" : "confirm"}</button>
         </div>
     );
 }
 
-export default App;
